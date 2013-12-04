@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @activation_key.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_activation_key_path(@activation_key) %> |
+<%= link_to 'Back', activation_keys_path %>

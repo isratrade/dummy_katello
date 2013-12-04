@@ -1,0 +1,23 @@
+<h1>Listing activation_keys</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @activation_keys.each do |activation_key| %>
+  <tr>
+    <td><%= activation_key.name %></td>
+    <td><%= link_to 'Show', activation_key %></td>
+    <td><%= link_to 'Edit', edit_activation_key_path(activation_key) %></td>
+    <td><%= link_to 'Destroy', activation_key, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Activation key', new_activation_key_path %>
