@@ -1,4 +1,4 @@
-module Katello
-  class ApplicationController < ActionController::Base
-  end
+class Katello::ApplicationController < ::ApplicationController
+  layout 'application'
+  helper :all
 end
